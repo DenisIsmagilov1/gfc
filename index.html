@@ -9,8 +9,75 @@
 </head>
 <body>
   <div class="wrapper">
-    sagasgw
+    <header class="header">
+      <div class="container">
+        <div class="header__body">
+          <div class="header__toggle">
+            <span></span>
+          </div>
+          <nav class="header__menu">
+            <ul class="header__links">
+              <li class="header__link">
+                <a href="#">Главная</a>
+              </li>
+              <li class="header__link">
+                <a href="#">О нас</a>
+              </li>
+              <li class="header__link link__popup" onclick="showPopup(event)">
+                <a href="#4">Торговля</a>
+                <div class="header__popup">
+                  <ul class="header__popup__links">
+                    <li class="header__popup__link">
+                      <a href="#">Торговая платформа</a>
+                    </li>
+                    <li class="header__popup__link">
+                      <a href="#">Управленческий консалтинг</a>
+                    </li>
+                    <li class="header__popup__link">
+                      <a href="#">Инвестиционные портфели</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="header__link">
+                <a href="#">Аналитика</a>
+              </li>
+              <li class="header__link">
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+            <div class="header__buttons">
+              <a href="#" class="header__button button button_outlined">
+                Личный кабинет
+              </a>
+              <a href="#" class="header__button button button_filled">
+                Открыть счет
+              </a>
+            </div>
+          </nav>
+          <div class="header__lang">
+            <div class="header__lang__select">
+              <div class="header__lang__selector">
+                <span>
+                  <img src="./assets/icons/tabler_world.svg" alt="world">
+                </span>
+                <span>
+                  <img src="./assets/icons/bi_chevron-down.svg" alt="chevron">
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="root">
+
+    </main>
+    <footer class="footer">
+
+    </footer>
   </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="./scripts/script.js"></script>
 </body>
 </html>
