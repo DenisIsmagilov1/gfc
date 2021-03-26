@@ -8,6 +8,7 @@ let openedPopup;
 function showPopup(event) {
   event.preventDefault();
   event.stopPropagation();
+  event.target.parentElement.classList.toggle("active")
   event.target.parentElement.lastElementChild.classList.toggle("show")
   openedPopup = event.target;
   window.addEventListener("click", listenClickPopup)
