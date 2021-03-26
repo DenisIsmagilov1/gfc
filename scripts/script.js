@@ -27,3 +27,27 @@ function listenClickPopup (event) {
     }	
   }
 }
+
+let openedLang;
+
+function showLang(event) {
+  event.preventDefault();
+  event.stopPropagation();
+  event.target.parentElement.parentElement.parentElement.lastElementChild.classList.toggle("active")
+  openedLang = event.target;
+  window.addEventListener("click", listenClickLang)
+}
+
+function listenClickLang (event) {
+  if (event.target != openedLang) {
+    window.removeEventListener("click", listenClickLang)
+    var dropdowns = document.getElementsByClassName("header__lang__options");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('active')) {
+        openDropdown.classList.remove('active');
+      }
+    }	
+  }
+}

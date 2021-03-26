@@ -65,13 +65,41 @@
           </nav>
           <div class="header__lang">
             <div class="header__lang__select">
-              <div class="header__lang__selector">
+              <div class="header__lang__selector" onclick="showLang(event)">
                 <span>
                   <img src="./assets/icons/tabler_world.svg" alt="world">
                 </span>
                 <span>
                   <img src="./assets/icons/bi_chevron-down.svg" alt="chevron">
                 </span>
+              </div>
+              <div class="header__lang__options">
+                <ul>
+                  <li class="header__lang__option">
+                    <a href="#">
+                      <div class="header__lang__option__body">
+                        <div class="header__lang__option__img">
+                          <img src="./assets/icons/tabler_world.svg" alt="world">
+                        </div>
+                        <span>
+                          Русский (Ru)
+                        </span>
+                      </div>
+                    </a>
+                </li>
+                  <li class="header__lang__option">
+                    <a href="">
+                      <div class="header__lang__option__body">
+                        <div class="header__lang__option__img">
+                          <img src="./assets/icons/₽.svg" alt="Rub">
+                        </div>
+                        <span>
+                          RUB
+                        </span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -81,7 +109,7 @@
     <main class="root">
 
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div class="footer__body">
           <div class="footer__columns">
