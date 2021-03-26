@@ -39,8 +39,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 $primaryColor: #FF4919;
 $primaryTextColor: #F6F6F6;
+$dark: #2D2D2D;
 
 $desktop: 1080px;
+$medium: 768px;
+$mobile: 576px;
 
 .wrapper {
 	font-family: 'Raleway', sans-serif;
@@ -56,6 +59,12 @@ $desktop: 1080px;
 	height: 100%;
 	max-width: 1230px;
 	padding: 0 20px;
+}
+
+@media(max-width: $medium) {
+	.container {
+		padding: 0 13px;
+	}
 }
 
 .button {
@@ -276,7 +285,95 @@ $desktop: 1080px;
 	flex: 1 1 100%;
 }
 
+
 .footer {
+	display: flex;
+	justify-content: center;
 	width: 100%;
-	height: 24px;
+	background-color: $dark;
+
+	&__body  {
+		display: flex;
+		flex-direction: column;
+		padding: 60px 0;
+		color: #fff;
+	}
+
+	&__columns {
+		display: flex;
+		margin: 0 0 80px 0;
+	}
+
+	&__column  {
+		display: flex;
+		flex-direction: column;
+		margin: 0 120px 0 0;
+
+		&:last-child {
+			margin: 0px;
+		}
+		
+		&__header {
+			margin: 0 0 50px 0;
+			font-size: 20px;
+			color: $primaryColor;
+		}
+	}
+
+	&__links {
+		margin: 0 0 20px 0;
+		a {
+			color: #fff;
+			font-size: 16px;
+			line-height: 19px;
+		}
+
+		&:last-child {
+			margin: 0;
+		}
+	}
+
+	&__sublinks {
+		margin: 0 0 20px 30px;
+
+		a {
+			color: #fff;
+			font-size: 16px;
+			line-height: 19px;
+		}
+	}
+
+	&__info  {
+		display: flex;
+		flex-direction: column;
+		font-size: 14px;
+	}
+
+	&__paragraph  {
+		margin: 0 0 20px 0;
+		
+		&__title  {
+			font-weight: 600;
+			margin: 0 0 5px 0;
+		}
+
+		&__text  {
+			line-height: 16px;
+		}
+	}
+
+}
+
+@media(max-width: $mobile) {
+	.footer {
+
+		&__columns {
+			flex-direction: column;
+		}
+
+		&__column {
+			margin: 0 0 55px 0;
+		}
+	}
+
 }
