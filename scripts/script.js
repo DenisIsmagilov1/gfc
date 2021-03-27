@@ -63,3 +63,19 @@ function listenClickLang (event) {
     }	
   }
 }
+
+$('.tabs__tab').on('click', function() {
+  const tab = this;
+  const targetId = tab.getAttribute('target');
+  const tabContent = $(`#tabs__tab-body-${targetId}`)[0];
+  if (tabContent) {
+    $('.tabs__tab-body').each(function() {
+      this.classList.remove('active')
+    });
+    $('.tabs__tab').each(function() {
+      this.classList.remove('active')
+    });
+    tab.classList.add('active');
+    tabContent.classList.add('active');
+  }
+})
