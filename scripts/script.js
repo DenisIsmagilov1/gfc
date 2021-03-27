@@ -1,3 +1,15 @@
+function ibg(){
+  let ibg=document.querySelectorAll(".ibg");
+  for (var i = 0; i < ibg.length; i++) {
+    const img = ibg[i].querySelector('img');
+    if(img){
+      ibg[i].style.backgroundImage = 'url('+img.getAttribute('src')+')';
+    }
+  }
+}
+
+ibg();
+
 $('.header__toggle').on("click", function() {
   $('.header__toggle').toggleClass('active');
   $('.header__menu').toggleClass('active');
