@@ -1696,6 +1696,243 @@ h1 {
 
 }
 
+.platform_start {
+	width: 80%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+
+	&__title {
+		margin: 0 0 40px 0;
+	}
+
+	&__subtitle {
+		line-height: 24px;
+		margin: 0 0 80px 0;
+	}
+
+	@media(max-width: $desktop) {
+		width: 80%;
+		align-items: center;
+
+		&__title {
+			text-align: center;
+			margin: 0 0 40px 0;
+		}
+
+		&__subtitle {
+			text-align: center;
+		}
+	}
+
+	@media(max-width: $mobile) {
+		width: 100%;
+		align-items: center;
+
+		&__title {
+			text-align: center;
+		}
+
+		&__subtitle {
+			font-size: 16px;
+		}
+	}
+}
+
+.interface {
+	width: 100%;
+	padding: 150px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-self: center;
+
+	&__header {
+	}
+
+	&__pretitle {
+		text-align: center;
+		margin: 0 0 60px 0;
+	}
+
+	&__title {
+		text-align: center;
+		margin: 0 0 60px 0;
+	}
+
+	&__subtitle {
+		text-align: center;
+		margin: 0 0 100px 0;
+	}
+
+	&__body {
+	}
+
+	@media(max-width: $mobile) {
+		padding: 50px 0;
+
+		&__pretitle {
+			margin: 0 0 30px 0;
+		}
+	
+		&__title {
+			margin: 0 0 30px 0;
+		}
+	
+		&__subtitle {
+			margin: 0 0 40px 0;
+		}
+	}
+}
+
+.terminals {
+	width: 1000px;
+	padding: 150px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-self: center;
+
+	&__image {
+		display: flex;
+		justify-content: center;
+		margin: 0 0 80px 0;
+
+		img {
+			max-width: 100%;
+		}
+	}
+
+	&__header {
+	}
+
+	&__title {
+		text-align: center;
+		margin: 0 0 50px 0;
+	}
+
+	&__subtitle {
+		text-align: center;
+	}
+
+	&__body {
+		display: flex;
+		justify-content: center;
+	}
+
+	@media(max-width: $desktop) {
+		width: 100%;
+		padding: 80px 0;
+	
+		&__title {
+			margin: 0 0 40px 0;
+		}
+
+		&__header {
+			margin: 0 0 60px 0;
+		}
+	}
+
+	@media(max-width: $mobile) {
+		padding: 60px 0;
+
+		&__image {
+			margin: 0 0 40px 0;
+		}
+
+		&__subtitle {
+			font-size: 16px;
+		}
+	
+		&__title {
+			margin: 0 0 30px 0;
+		}
+
+		&__header {
+			margin: 0 0 40px 0;
+		}
+	}
+}
+
+.web-trading {
+	padding: 150px 0;
+	display: flex;
+
+	&__row {
+		flex: 0 0 70%
+	}
+
+	&__header {
+		margin: 0 0 50px 0;
+	}
+
+	&__pretitle {
+		margin: 0 0 50px 0;
+	}
+
+	&__title {
+		margin: 0 0 50px 0;
+	}
+
+	&__body {
+		font-size: 20px;
+		line-height: 24px;
+	}
+
+	@media(max-width: $desktop) {
+		&__row {
+			flex: 0 0 100%
+		}
+
+		&__pretitle {
+			margin: 0 0 60px 0;
+			text-align: center;
+		}
+	
+		&__title {
+			margin: 0 0 40px 0;
+			text-align: center;
+		}
+
+		&__subtitle {
+			text-align: center;
+		}
+
+		&__body {
+			display: flex;
+			justify-content: center;
+		}
+	}
+
+	@media(max-width: $mobile) {
+		padding: 60px 0;
+
+		&__row {
+			flex: 0 0 100%
+		}
+
+		&__pretitle {
+			margin: 0 0 20px 0;
+		}
+	
+		&__title {
+			margin: 0 0 30px 0;
+		}
+
+		&__header {
+			margin: 0 0 40px 0;
+		}
+
+		&__body {
+			font-size: 16px;
+			line-height: 16px;
+		}
+	}
+
+}
+
 .footer {
 	display: flex;
 	justify-content: center;
