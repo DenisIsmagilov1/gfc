@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>GFC</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__body">
+          <div class="header__toggle">
+            <span></span>
+          </div>
+          <nav class="header__menu">
+            <ul class="header__links">
+              <li class="header__link toggle">
+                <div class="header__toggle">
+                  <span></span>
+                </div>
+                <span>
+                  Меню
+                </span>
+              </li>
+              <li class="header__link">
+                <a href="/">Главная</a>
+              </li>
+              <li class="header__link">
+                <a href="/about.html">О нас</a>
+              </li>
+              <li class="header__link link__popup" onclick="showPopup(event)">
+                <a href="#">Торговля</a>
+                <div class="header__popup">
+                  <ul class="header__popup__links">
+                    <li class="header__popup__link">
+                      <a href="/platform.html">Торговая платформа</a>
+                    </li>
+                    <li class="header__popup__link">
+                      <a href="#">Управленческий консалтинг</a>
+                    </li>
+                    <li class="header__popup__link">
+                      <a href="#">Инвестиционные портфели</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="header__link">
+                <a href="#">Аналитика</a>
+              </li>
+              <li class="header__link">
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+            <div class="header__buttons">
+              <a href="#" class="header__button button button_outlined">
+                Личный кабинет
+              </a>
+              <a href="#" class="header__button button button_filled">
+                Открыть счет
+              </a>
+            </div>
+          </nav>
+          <div class="header__lang">
+            <div class="header__lang__select">
+              <div class="header__lang__selector" onclick="showLang(event)">
+                <span>
+                  <img src="./assets/icons/tabler_world.svg" alt="world">
+                </span>
+                <span>
+                  <img src="./assets/icons/bi_chevron-down.svg" alt="chevron">
+                </span>
+              </div>
+              <div class="header__lang__options">
+                <ul>
+                  <li class="header__lang__option">
+                    <a href="#">
+                      <div class="header__lang__option__body">
+                        <div class="header__lang__option__img">
+                          <img src="./assets/icons/tabler_world.svg" alt="world">
+                        </div>
+                        <span>
+                          Русский (Ru)
+                        </span>
+                      </div>
+                    </a>
+                </li>
+                  <li class="header__lang__option">
+                    <a href="">
+                      <div class="header__lang__option__body">
+                        <div class="header__lang__option__img">
+                          <img src="./assets/icons/₽.svg" alt="Rub">
+                        </div>
+                        <span>
+                          RUB
+                        </span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="root">
+      <section class="section _fullscreen ibg">
+        <img src="./assets/images/portfolio_start.png" alt="bg">
+        <div class="section__opacity"> 
+        </div>
+        <div class="container section">
+          <div class="section__body">
+            <div class="trading_start">
+              <div class="trading_start__title">
+                <h1>
+                  Инвестиционные портфели
+                </h1>
+              </div>
+              <div class="trading_start__subtitle section__subtitle">
+                Выберите для себя оптимальный уровень инвестиций и подходящий тип портфеля.
+              </div>
+              <a href="#" class="trading_screen__button button button_filled _big">
+                Инвестировать
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container section">
+          <div class="section__body">
+            <div class="portfolios">
+              <div class="portfolios__row">
+                <div class="portfolios__header">
+                  <div class="portfolios__title">
+                    <h1>
+                      Портфель Franklin
+                    </h1>
+                  </div>
+                  <div class="portfolios__subtitle section__subtitle">
+                      <p>
+                        Этот портфель станет отличным решением
+                        для инвесторов, которые уже знакомы с торговлей
+                        акциями и капитал инвестирования которых,
+                        составляет более 10 000 $.
+                      </p>
+                      <br>
+                      <p>
+                        Это отличный пример оптимального соотношения 
+                        между уровнем прибыли и возможными потерями
+                      </p>
+                  </div>
+                  <div class="portfolios__list">
+                    <div class="portfolios__item">
+                      <div class="portfolios__item__num">
+                        58%
+                      </div>
+                      <p>Акции США</p>
+                    </div>
+                    <div class="portfolios__item">
+                      <div class="portfolios__item__num">
+                        14%
+                      </div>
+                      <p>Акции других стран</p>
+                    </div>
+                    <div class="portfolios__item">
+                      <div class="portfolios__item__num">
+                        14%
+                      </div>
+                      <p>Сырьевые активы</p>
+                    </div>
+                    <div class="portfolios__item">
+                      <div class="portfolios__item__num">
+                        14%
+                      </div>
+                      <p>Валютные активы</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolios__body ibg">
+                  <img src="./assets/images/franklin.png" alt="bg">
+                  <div class="portfolios__opacity"> 
+                  </div>
+                  <div class="portfolios__content">
+                    <div class="portfolios__list">
+                      <div class="portfolios__item _underlined">
+                        <div class="portfolios__item__num _underlined">
+                          10,57%
+                        </div>
+                        <p>Доходность за
+                          квартал</p>
+                      </div>
+                      <div class="portfolios__item _underlined">
+                        <div class="portfolios__item__num _underlined">
+                          4,5%
+                        </div>
+                        <p>Возможная 
+                          просадка</p>
+                      </div>
+                      <div class="portfolios__item _underlined">
+                        <div class="portfolios__item__num _underlined">
+                          до 8
+                        </div>
+                        <p>Акций
+                          в портфеле</p>
+                      </div>
+                      <div class="portfolios__item _underlined">
+                        <div class="portfolios__item__num _underlined">
+                          3 мес.
+                        </div>
+                        <p>Срок 
+                          инвестиций</p>
+                      </div>
+                      <div class="portfolios__item _underlined">
+                        <div class="portfolios__item__num _underlined">
+                          до 100$
+                        </div>
+                        <p>Стоимость 
+                          1 акции</p>
+                      </div>
+                    </div>
+                    <div class="portfolios__body__text">
+                      Портфель формируется из акций таких компаний
+                      как Bank of America, Ebay, Ford, Twitter, Hewlett Packard,
+                      GoPro и другие. Подходит для инвестиций до 10 000 $
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section _gray">
+        <div class="container section">
+          <div class="section__body">
+            <div class="portfolios">
+              <div class="portfolios__row _reversed">
+                <div class="portfolios__header">
+                  <div class="portfolios__title">
+                    <h1>
+                      Портфель Buffet
+                    </h1>
+                  </div>
+                  <div class="portfolios__subtitle section__subtitle">
+                      <p>
+                          Этот портфель станет отличным решением
+                          для инвесторов, которые уже знакомы с торговлей
+                          акциями и капитал инвестирования которых,
+                          составляет более 10 000 $.
+                      </p>
+                      <br>
+                      <p>
+                        Это отличный пример оптимального соотношения 
+                        между уровнем прибыли и возможными потерями
+                      </p>
+                  </div>
+                  <div class="portfolios__list">
+                    <div class="portfolios__item">
+                      <div class="portfolios__item__num">
+                        19%
+                      </div>
+                      <p>Акции США</p>
+                    </div>
+                    <div class="portfolios__item">
+                      <div class="portfolios__item__num">
+                        21%
+                      </div>
+                      <p>Акции других стран</p>
+                    </div>
+                    <div class="portfolios__item">
+                      <div class="portfolios__item__num">
+                        30%
+                      </div>
+                      <p>Сырьевые активы</p>
+                    </div>
+                    <div class="portfolios__item">
+                      <div class="portfolios__item__num">
+                        30%
+                      </div>
+                      <p>Валютные активы</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolios__body ibg">
+                  <img src="./assets/images/buffet.png" alt="bg">
+                  <div class="portfolios__opacity"> 
+                  </div>
+                  <div class="portfolios__content">
+                    <div class="portfolios__list">
+                      <div class="portfolios__item _underlined">
+                        <div class="portfolios__item__num _underlined">
+                          18,12%
+                        </div>
+                        <p>Доходность за
+                          квартал</p>
+                      </div>
+                      <div class="portfolios__item _underlined">
+                        <div class="portfolios__item__num _underlined">
+                          4,5%
+                        </div>
+                        <p>Возможная 
+                          просадка</p>
+                      </div>
+                      <div class="portfolios__item _underlined">
+                        <div class="portfolios__item__num _underlined">
+                          до 14
+                        </div>
+                        <p>Акций
+                          в портфеле</p>
+                      </div>
+                      <div class="portfolios__item _underlined">
+                        <div class="portfolios__item__num _underlined">
+                          до 1 года
+                        </div>
+                        <p>Срок 
+                          инвестиций</p>
+                      </div>
+                      <div class="portfolios__item _underlined _big">
+                        <div class="portfolios__item__num _underlined">
+                          от 100$ до 400$
+                        </div>
+                        <p>Стоимость 
+                          1 акции</p>
+                      </div>
+                    </div>
+                    <div class="portfolios__body__text">
+                      Портфель сформирован из акций таких компаний 
+                      как Coca-Cola, Disney, Facebook, Nike, NVidia и другие. 
+                      Подходит для инвестиций от 10 000 до 50 000 $.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container section">
+          <div class="section__body">
+            <div class="portfolios">
+              <div class="portfolios__row">
+                <div class="portfolios__header">
+                  <div class="portfolios__title">
+                    <h1>
+                      Портфель Samuelso
+                    </h1>
+                  </div>
+                  <div class="portfolios__subtitle section__subtitle">
+                      <p>
+                        Этот портфель нацелен на комбинированную покупку 
+                        акций высоко капитализированных компаний. 
+                        Он обеспечивает максимальную прибыль 
+                        для длительных периодов инвестирования.
+                      </p>
+                      <br>
+                      <p>
+                        Благодаря потенциалу начального капитала  (от 50 000 
+                        долларов), этот портфель обладает завидной гибкостью, 
+                        которая очень положительно влияет на рентабельность.
+                      </p>
+                  </div>
+                  <div class="portfolios__list">
+                    <div class="portfolios__item">
+                      <div class="portfolios__item__num">
+                        58%
+                      </div>
+                      <p>Акции США</p>
+                    </div>
+                    <div class="portfolios__item">
+                      <div class="portfolios__item__num">
+                        14%
+                      </div>
+                      <p>Акции других стран</p>
+                    </div>
+                    <div class="portfolios__item">
+                      <div class="portfolios__item__num">
+                        14%
+                      </div>
+                      <p>Сырьевые активы</p>
+                    </div>
+                    <div class="portfolios__item">
+                      <div class="portfolios__item__num">
+                        14%
+                      </div>
+                      <p>Валютные активы</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolios__body ibg">
+                  <img src="./assets/images/franklin.png" alt="bg">
+                  <div class="portfolios__opacity"> 
+                  </div>
+                  <div class="portfolios__content">
+                    <div class="portfolios__list">
+                      <div class="portfolios__item _underlined">
+                        <div class="portfolios__item__num _underlined">
+                          27,6%
+                        </div>
+                        <p>Доходность за
+                          квартал</p>
+                      </div>
+                      <div class="portfolios__item _underlined">
+                        <div class="portfolios__item__num _underlined">
+                          9,7%
+                        </div>
+                        <p>Возможная 
+                          просадка</p>
+                      </div>
+                      <div class="portfolios__item _underlined">
+                        <div class="portfolios__item__num _underlined">
+                          до 21
+                        </div>
+                        <p>Акций
+                          в портфеле</p>
+                      </div>
+                      <div class="portfolios__item _underlined">
+                        <div class="portfolios__item__num _underlined">
+                          до 3 лет
+                        </div>
+                        <p>Срок 
+                          инвестиций</p>
+                      </div>
+                      <div class="portfolios__item _underlined">
+                        <div class="portfolios__item__num _underlined">
+                          любая
+                        </div>
+                        <p>Стоимость 
+                          1 акции</p>
+                      </div>
+                    </div>
+                    <div class="portfolios__body__text">
+                      Портфель сформирован из акций таких компаний 
+                      как Alphabet, Amazon, Apple, Goldman Sachs, McDonald’s, 
+                      Tesla и другие. Подходит для инвестиций от 50 000 $.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__body">
+          <div class="footer__columns">
+            <div class="footer__column">
+              <div class="footer__column__header">
+                Документы
+              </div>
+              <ul>
+                <li class="footer__links"><a href="#">Политика AML</a></li>
+                <li class="footer__links"><a href="#">Политика возврата денежных средств</a></li>
+                <li class="footer__links"><a href="#">Политика конфиденциальности</a></li>
+                <li class="footer__links"><a href="#">Пользовательское соглашение</a></li>
+                <li class="footer__links"><a href="#">Уведомление о рисках</a></li>
+              </ul>
+            </div>
+            <div class="footer__column">
+              <div class="footer__column__header">
+                Страницы
+              </div>
+              <ul>
+                <li class="footer__links"><a href="#">Главная</a></li>
+                <li class="footer__links"><a href="#">О Нас</a></li>
+                <li class="footer__links"><a href="#">Торговля</a></li>
+                <li class="footer__sublinks"><a href="#">Торговая платформа</a></li>
+                <li class="footer__sublinks"><a href="#">Управленческий консалтинг</a></li>
+                <li class="footer__sublinks"><a href="#">Инвестиционные портфели</a></li>
+                <li class="footer__links"><a href="#">Аналитика</a></li>
+                <li class="footer__links"><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__info">
+            <div class="footer__paragraph">
+              <div class="footer__paragraph__title">
+                Правовая информация:
+              </div>
+              <div class="footer__paragraph__text">
+                Бренд GFS принадлежит компании Global Finance System
+              </div>
+            </div>
+            <div class="footer__paragraph">
+              <div class="footer__paragraph__title">
+                Уведомление о рисках
+              </div>
+              <div class="footer__paragraph__text">
+                Торговля валютами, контрактами на разницу (CFD) и другими активами с привлечением заемных средств несет высокий риск для капитала и подходит не всем инвесторам. 
+                Прежде чем начать торговать, убедитесь, что вы полностью понимаете связанные с этим риски, учитываете свои инвестиционные цели и уровень опыта, а при необходимости 
+                обратитесь за консультацией к независимому эксперту. Пожалуйста, прочтите полное предупреждение о риске.
+              </div>
+            </div>
+            <div class="footer__paragraph">
+              <div class="footer__paragraph__title">
+                Региональные ограничения:
+              </div>
+              <div class="footer__paragraph__text">
+                Услуги и информация на сайте не предназначены для граждан/резидентов США, а также для распространения или использования любым лицом в любой стране или юрисдикции,
+                где такое распространение или использование противоречило бы местному законодательству или нормативным актам.
+              </div>
+            </div>
+            <div class="footer__paragraph">
+              <div class="footer__paragraph__text">
+                <p>Oceanic building office 268, 3035 , Limassol,</p>
+                <p>Cyprus</p>
+              </div>
+            </div>
+            <div class="footer__paragraph">
+              <div class="footer__paragraph__text">© 2021 </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="./scripts/script.js"></script>
+</body>
+</html>
