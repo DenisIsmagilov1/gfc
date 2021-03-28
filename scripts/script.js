@@ -18,8 +18,8 @@ $('.header__toggle').on("click", function() {
 let openedPopup;
 
 function showPopup(event) {
-  event.preventDefault();
-  event.stopPropagation();
+  // event.preventDefault();
+  // event.stopPropagation();
   event.target.parentElement.classList.toggle("active")
   event.target.parentElement.lastElementChild.classList.toggle("show")
   openedPopup = event.target;
@@ -43,8 +43,8 @@ function listenClickPopup (event) {
 let openedLang;
 
 function showLang(event) {
-  event.preventDefault();
-  event.stopPropagation();
+  // event.preventDefault();
+  // event.stopPropagation();
   event.target.parentElement.parentElement.parentElement.lastElementChild.classList.toggle("active")
   openedLang = event.target;
   window.addEventListener("click", listenClickLang)
