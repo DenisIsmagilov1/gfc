@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>GFC</title>
 </head>
 <body>
@@ -67,10 +67,10 @@
             <div class="header__lang__select">
               <div class="header__lang__selector" onclick="showLang(event)">
                 <span>
-                  <img src="./assets/icons/tabler_world.svg" alt="world">
+                  <img src="./img/icons/tabler_world.svg" alt="world">
                 </span>
                 <span>
-                  <img src="./assets/icons/bi_chevron-down.svg" alt="chevron">
+                  <img src="./img/icons/bi_chevron-down.svg" alt="chevron">
                 </span>
               </div>
               <div class="header__lang__options">
@@ -79,7 +79,7 @@
                     <a href="#">
                       <div class="header__lang__option__body">
                         <div class="header__lang__option__img">
-                          <img src="./assets/icons/tabler_world.svg" alt="world">
+                          <img src="./img/icons/tabler_world.svg" alt="world">
                         </div>
                         <span>
                           Русский (Ru)
@@ -91,7 +91,7 @@
                     <a href="">
                       <div class="header__lang__option__body">
                         <div class="header__lang__option__img">
-                          <img src="./assets/icons/₽.svg" alt="Rub">
+                          <img src="./img/icons/₽.svg" alt="Rub">
                         </div>
                         <span>
                           RUB
@@ -107,99 +107,76 @@
       </div>
     </header>
     <main class="root">
-      <section class="section _fullscreen ibg">
-        <img src="./assets/images/analytics_start.png" alt="bg">
-        <div class="section__opacity"> 
-        </div>
-        <div class="container section">
-          <div class="section__body">
-            <div class="analytics_start">
-              <div class="analytics_start__title">
-                <h1>
-                  Аналитика
-                </h1>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       <section class="section">
         <div class="container section">
           <div class="section__body">
-            <div class="analytics-block">
-              <div class="analytics-block__row">
-                <div class="analytics-block__header">
-                  <div class="analytics-block__title">
+            <div class="contacts">
+              <div class="contacts__row">
+                <div class="contacts__header">
+                  <div class="contacts__title">
                     <h1>
-                      Состояние рынка
+                      Контакты
                     </h1>
                   </div>
-                  <div class="analytics-block__subtitle section__subtitle">
-                    <h2>
-                      Текущее состояние рынка по финансовым инструментам на рынке. Позволяет узнать цену 
-                      на конкретное время и увидеть динамику по различным периодам
-                    </h2>
+                  <div class=contacts__list">
+                    <ul>
+                      <li class="contacts__item">
+                        <div class="contacts__item__num">
+                          <img src="./img/icons/phone.png" alt="">
+                        </div>
+                        <div class="contacts__item__body">
+                          <div class="contacts__item__title">
+                            Номер телефона
+                          </div>
+                          <p>
+                            тут телефон
+                          </p>
+                        </div>
+                      </li>
+                      <li class="contacts__item">
+                        <div class="contacts__item__num">
+                          <img src="./img/icons/mail.png" alt="">
+                        </div>
+                        <div class="contacts__item__body">
+                          <div class="contacts__item__title">
+                            Электронная почта
+                          </div>
+                          <p>
+                            тут почта
+                          </p>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                 </div>
-                <div class="analytics-block__body">
-                  <div class="analytics-block__image">
-                    <img src="/assets/images/market_image.png" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section _gray">
-        <div class="container section">
-          <div class="section__body">
-            <div class="analytics-block">
-              <div class="analytics-block__row">
-                <div class="analytics-block__header">
-                  <div class="analytics-block__title">
-                    <h1>
-                      Экономический календарь
-                    </h1>
-                  </div>
-                  <div class="analytics-block__subtitle section__subtitle">
-                    <h2>
-                      Работайте на финансовых рынках с помощью экономического календаря — 
-                      применяйте любые торговые инструменты и стратегии
-                    </h2>
-                  </div>
-                </div>
-                <div class="analytics-block__body">
-                  <div class="analytics-block__image">
-                    <img src="/assets/images/calendar_image.png" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section">
-        <div class="container section">
-          <div class="section__body">
-            <div class="analytics-block">
-              <div class="analytics-block__row">
-                <div class="analytics-block__header">
-                  <div class="analytics-block__title">
-                    <h1>
-                      Графики On-line
-                    </h1>
-                  </div>
-                  <div class="analytics-block__subtitle section__subtitle">
-                    <h2>
-                      Используйте главный инструмент трейдеров – технический анализ на графике финансового инструмента
-                    </h2>
-                  </div>
-                </div>
-                <div class="analytics-block__body">
-                  <div class="analytics-block__image">
-                    <img src="/assets/images/charts_image.png" alt="">
-                  </div>
+                <div class="contacts__body">
+                  <form class="contacts__form">
+                    <div class="contacts__pretitle section__pretitle">
+                      Свяжитесь с нами:
+                    </div>
+
+                    <label for="name">
+                      Ваше имя (обязательно)
+                    </label>
+                    <input id="name" type="text">
+
+                    <label for="email">
+                      Ваш e-mail (обязательно)
+                    </label>
+                    <input id="email" type="text">
+
+                    <label for="theme">
+                      Тема
+                    </label>
+                    <input id="theme" type="text">
+
+                    <label for="message">Сообщение</label>
+                    <textarea id="message" type="text"></textarea>
+                    
+                    <button type="submit" class="button button_filled">
+                      Отправить
+                    </button>
+                  </form>
                 </div>
               </div>
             </div>
@@ -282,6 +259,6 @@
     </footer>
   </div>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="./scripts/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 </html>
