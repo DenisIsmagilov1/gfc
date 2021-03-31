@@ -79,3 +79,6 @@ $('.tabs__tab').on('click', function() {
     tabContent.classList.add('active');
   }
 })
+
+@@include('./inview.js')
+@@include('./animations.js')

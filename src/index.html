@@ -8,7 +8,7 @@
   <div class="wrapper">
     @@include('./components/_header.html')
     <main class="root">
-      <section class="section _fullscreen ibg">
+      <section class="section _fullscreen ibg opacityAnimation">
         <img src="./img/images/start_img.jpg" alt="bg">
         <div class="section__opacity">
 
@@ -32,7 +32,7 @@
         <div class="container section">
           <div class="values">
             <div class="values__header">
-              <div class="values__pretitle section__pretitle">
+              <div class="values__pretitle section__pretitle ">
                 Наши ценности
               </div>
               <div class="values__title">
@@ -48,7 +48,7 @@
             </div>
             <div class="values__body">
               <div class="cards__row">
-                <div class="cards__wrap">
+                <div class="cards__wrap scaleAnimation">
                 <div class="cards__item _img" style="background: url(../img/images/bang.jpg) 100% 100% /cover no-repeat;">
                   <div class="cards__opacity">
                   </div>
@@ -65,7 +65,7 @@
                   </div>
                 </div>
               </div>
-              <div class="cards__wrap">
+              <div class="cards__wrap scaleAnimation">
                 <div class="cards__item _img" style="background: url(../img/images/dom.jpg) 100% 100% /cover no-repeat;">
                   <div class="cards__opacity">
                   </div>
@@ -82,7 +82,7 @@
                   </div>
                 </div>
               </div>
-              <div class="cards__wrap">
+              <div class="cards__wrap scaleAnimation">
                 <div class="cards__item _img" style="background: url(../img/images/dolla.jpg) 100% 100% /cover no-repeat;">
                   <div class="cards__opacity">
                   </div>
@@ -99,7 +99,7 @@
                   </div>
                 </div>
               </div>
-              <div class="cards__wrap">
+              <div class="cards__wrap scaleAnimation">
                 <div class="cards__item _img" style="background: url(../img/images/house.jpg) 100% 100% /cover no-repeat;">
                   <div class="cards__opacity">
                   </div>
@@ -121,7 +121,7 @@
           </div>
         </div>
       </section>
-      <section class="section ibg">
+      <section class="section ibg opacityAnimation">
         <img src="./img/images/mission.jpg" alt="bg">
         <div class="section__opacity">
         </div>
@@ -154,7 +154,7 @@
           </div>
         </div>
       </section>
-      <section class="section">
+      <section class="section opacityAnimation">
         <div class="container section">
           <div class="section__body">
             <div class="platform">
@@ -203,7 +203,7 @@
             </div>
             <div class="portfolio__body">
               <div class="cards__row _big">
-                <div class="cards__wrap _big">
+                <div class="cards__wrap _big opacityAnimation">
                 <div class="cards__item _img" style="background: url(../img/images/consult.jpg) 100% 100% /cover no-repeat;">
                   <div class="cards__opacity">
                   </div>
@@ -228,7 +228,7 @@
                   </div>
                 </div>
               </div>
-              <div class="cards__wrap _big">
+              <div class="cards__wrap _big opacityAnimation">
                 <div class="cards__item _img" style="background: url(../img/images/money.jpg) 100% 100% /cover no-repeat;">
                   <div class="cards__opacity">
                   </div>
@@ -286,37 +286,37 @@
                   </div>
                   <div class="instruments__list">
                     <div class="instruments__item">
-                      <div class="instruments__item__num">
+                      <div class="instruments__item__num counterAnimation">
                         42
                       </div>
                       <p>Валютные пары</p>
                     </div>
                     <div class="instruments__item">
-                      <div class="instruments__item__num">
+                      <div class="instruments__item__num counterAnimation">
                         35
                       </div>
                       <p>Акции США</p>
                     </div>
                     <div class="instruments__item">
-                      <div class="instruments__item__num">
+                      <div class="instruments__item__num counterAnimation">
                         6
                       </div>
                       <p>Gold, Silver, PA</p>
                     </div>
                     <div class="instruments__item">
-                      <div class="instruments__item__num">
+                      <div class="instruments__item__num counterAnimation">
                         13
                       </div>
                       <p>Мировые индексы</p>
                     </div>
                     <div class="instruments__item">
-                      <div class="instruments__item__num">
+                      <div class="instruments__item__num counterAnimation">
                         15
                       </div>
                       <p>Криптовалют</p>
                     </div>
                     <div class="instruments__item">
-                      <div class="instruments__item__num">
+                      <div class="instruments__item__num counterAnimation">
                         2
                       </div>
                       <p>BRENT и WTI</p>
@@ -328,7 +328,7 @@
           </div>
         </div>
       </section>
-      <section class="section ibg">
+      <section class="section ibg opacityAnimation">
         <img src="./img/images/comfort.png" alt="bg">
         <div class="section__opacity _half">
         </div>
@@ -354,7 +354,7 @@
                 <div class="comfort__body">
                   <div class="comfort__list">
                     <ul>
-                      <li class="comfort__item">
+                      <li class="comfort__item scaleAnimation">
                         <div class="comfort__item__num">1</div>
                         <div class="comfort__item__body">
                           <div class="comfort__item__title">
@@ -363,7 +363,7 @@
                           <p>Зарегистрируйтесь/войдите в личный кабинет</p>
                         </div>
                       </li>
-                      <li class="comfort__item">
+                      <li class="comfort__item scaleAnimation">
                         <div class="comfort__item__num">2</div>
                         <div class="comfort__item__body">
                           <div class="comfort__item__title">
@@ -373,7 +373,7 @@
                             способом, быстро и безопасно</p>
                         </div>
                       </li>
-                      <li class="comfort__item">
+                      <li class="comfort__item scaleAnimation">
                         <div class="comfort__item__num">3</div>
                         <div class="comfort__item__body">
                           <div class="comfort__item__title">
@@ -393,7 +393,6 @@
     </main>
     @@include('./components/_footer.html')
   </div>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="js/script.min.js"></script>
+  @@include('./components/_scripts.html')
 </body>
 </html>

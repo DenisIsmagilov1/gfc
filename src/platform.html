@@ -8,7 +8,7 @@
   <div class="wrapper">
     @@include('./components/_header.html')
     <main class="root">
-      <section class="section _fullscreen ibg">
+      <section class="section _fullscreen ibg opacityAnimation">
         <img src="./img/images/platform.png" alt="bg">
         <div class="section__opacity"> 
         </div>
@@ -50,7 +50,7 @@
             </div>
             <div class="interface__body">
               <div class="cards__row">
-                <div class="cards__wrap">
+                <div class="cards__wrap scaleAnimation">
                 <div class="cards__item">
                   <div class="cards__header">
                     <div class="cards__img">
@@ -65,7 +65,7 @@
                   </div>
                 </div>
               </div>
-              <div class="cards__wrap">
+              <div class="cards__wrap scaleAnimation">
                 <div class="cards__item">
                   <div class="cards__header">
                     <div class="cards__img">
@@ -80,7 +80,7 @@
                   </div>
                 </div>
               </div>
-              <div class="cards__wrap">
+              <div class="cards__wrap scaleAnimation">
                 <div class="cards__item">
                   <div class="cards__header">
                     <div class="cards__img">
@@ -95,7 +95,7 @@
                   </div>
                 </div>
               </div>
-              <div class="cards__wrap">
+              <div class="cards__wrap scaleAnimation">
                 <div class="cards__item">
                   <div class="cards__header">
                     <div class="cards__img">
@@ -119,7 +119,7 @@
         <div class="container section">
           <div class="section__body">
             <div class="terminals">
-                <div class="terminals__image">
+                <div class="terminals__image opacityAnimation">
                   <img src="./img/images/gatgets.png" alt="platform">
                 </div>
                 <div class="terminals__header">
@@ -148,7 +148,7 @@
           </div>
         </div>
       </section>
-      <section class="section ibg">
+      <section class="section ibg opacityAnimation">
         <img src="./img/images/web_trading.png"" alt="bg">
         <div class="section__opacity">
         </div>
@@ -183,7 +183,6 @@
     </main>
     @@include('./components/_footer.html')
   </div>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="js/script.min.js"></script>
+  @@include('./components/_scripts.html')
 </body>
 </html>

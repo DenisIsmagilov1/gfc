@@ -8,7 +8,7 @@
   <div class="wrapper">
     @@include('./components/_header.html')
     <main class="root">
-      <section class="section _fullscreen ibg">
+      <section class="section _fullscreen ibg opacityAnimation">
         <img src="./img/images/sobes.jpg" alt="bg">
         <div class="section__opacity"> 
         </div>
@@ -64,7 +64,7 @@
           <div class="section__body">
             <div class="safety">
               <div class="safety__row">
-                <div class="safety__body">
+                <div class="safety__body opacityAnimation">
                   <img src="./img/images/safety.png" alt="">
                 </div>
                 <div class="safety__header">
@@ -161,7 +161,7 @@
                           </span>
                         </div>
                         <div class="tabs__content">
-                          <div class="tabs__tab-body active" id="tabs__tab-body-1">
+                          <div class="tabs__tab-body active opacityAnimation" id="tabs__tab-body-1">
                             <div class="liquidity__tab-content">
                               <div class="liquidity__tab-content__image">
                                 <img src="./img/images/deutsche_bank.png" alt="deutsche bank">
@@ -178,7 +178,7 @@
                               </div>
                             </div>
                           </div>
-                          <div class="tabs__tab-body" id="tabs__tab-body-2">
+                          <div class="tabs__tab-body opacityAnimation" id="tabs__tab-body-2">
                             <div class="liquidity__tab-content">
                               <div class="liquidity__tab-content__image">
                                 <img src="./img/images/JPMorganIcon.png" alt="JPMorganIcon">
@@ -196,7 +196,7 @@
                               </div>
                             </div>
                           </div>
-                          <div class="tabs__tab-body" id="tabs__tab-body-3">
+                          <div class="tabs__tab-body opacityAnimation" id="tabs__tab-body-3">
                             <div class="liquidity__tab-content">
                               <div class="liquidity__tab-content__image">
                                 <img src="./img/images/CitiVentureCapitalInternationalIcon.png" alt="CitiVentureCapitalInternationalIcon">
@@ -213,7 +213,7 @@
                               </div>
                             </div>
                           </div>
-                          <div class="tabs__tab-body" id="tabs__tab-body-4">
+                          <div class="tabs__tab-body opacityAnimation" id="tabs__tab-body-4">
                             <div class="liquidity__tab-content">
                               <div class="liquidity__tab-content__image">
                                 <img src="./img/images/GoldmanSachsIcon.png" alt="GoldmanSachsIcon">
@@ -231,7 +231,7 @@
                               </div>
                             </div>
                           </div>
-                          <div class="tabs__tab-body" id="tabs__tab-body-5">
+                          <div class="tabs__tab-body opacityAnimation" id="tabs__tab-body-5">
                             <div class="liquidity__tab-content">
                               <div class="liquidity__tab-content__image">
                                 <img src="./img/images/UBSIcon.png" alt="UBSIcon">
@@ -247,7 +247,7 @@
                               </div>
                             </div>
                           </div>
-                          <div class="tabs__tab-body" id="tabs__tab-body-6">
+                          <div class="tabs__tab-body opacityAnimation" id="tabs__tab-body-6">
                             <div class="liquidity__tab-content">
                               <div class="liquidity__tab-content__image">
                                 <img src="./img/images/HSBCIcon.png" alt="HSBCIcon">
@@ -276,7 +276,6 @@
     </main>
     @@include('./components/_footer.html')
   </div>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="js/script.min.js"></script>
+  @@include('./components/_scripts.html')
 </body>
 </html>

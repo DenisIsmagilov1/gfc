@@ -59,14 +59,15 @@ function html() {
 
 function css() {
   return src(path.src.css)
-    // .pipe(hash())
+    .pipe(hash())
     .pipe(scss({
       outputStyle: "expanded"
     }))
     .pipe(groupMedia())
     .pipe(autoprefixer({
-      overrideBrowserslist: ["last 5 versions"],
-      cascade: true
+      // overrideBrowserslist: ["last 10 versions"],
+      cascade: true,
+      flexbox: true
     }))
     .pipe(dest(path.build.css))
     .pipe(cleanCss())
@@ -83,6 +84,7 @@ function js() {
     // .pipe(babel({
     //   presets: ['@babel/env']
     // }))
+    .pipe(hash())
     .pipe(fileInclude())
     .pipe(dest(path.build.js))
     .pipe(uglify())
@@ -95,12 +97,12 @@ function js() {
 
 function images() {
   return src(path.src.img)
-    // .pipe(imagemin({
-    //   progressive: true,
-    //   svgoPlugins: [{removeViewBox: false}],
-    //   interplaced: true,
-    //   optimizationLevel: 7
-    // }))
+    .pipe(imagemin({
+      progressive: true,
+      svgoPlugins: [{removeViewBox: false}],
+      interplaced: true,
+      optimizationLevel: 7
+    }))
     .pipe(dest(path.build.img))
     .pipe(browserSync.stream())
 }

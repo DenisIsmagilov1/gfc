@@ -8,7 +8,7 @@
   <div class="wrapper">
     @@include('./components/_header.html')
     <main class="root">
-      <section class="section _fullscreen ibg">
+      <section class="section _fullscreen ibg opacityAnimation">
         <img src="./img/images/analytics_start.jpg" alt="bg">
         <div class="section__opacity"> 
         </div>
@@ -43,7 +43,7 @@
                   </div>
                 </div>
                 <div class="analytics-block__body">
-                  <div class="analytics-block__image">
+                  <div class="analytics-block__image opacityAnimation">
                     <img src="./img/images/market_image.png" alt="">
                   </div>
                 </div>
@@ -71,7 +71,7 @@
                   </div>
                 </div>
                 <div class="analytics-block__body">
-                  <div class="analytics-block__image">
+                  <div class="analytics-block__image opacityAnimation">
                     <img src="./img/images/calendar_image.png" alt="">
                   </div>
                 </div>
@@ -98,7 +98,7 @@
                   </div>
                 </div>
                 <div class="analytics-block__body">
-                  <div class="analytics-block__image">
+                  <div class="analytics-block__image opacityAnimation">
                     <img src="./img/images/charts_image.png" alt="">
                   </div>
                 </div>
@@ -110,7 +110,6 @@
     </main>
     @@include('./components/_footer.html')
   </div>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="js/script.min.js"></script>
+  @@include('./components/_scripts.html')
 </body>
 </html>
