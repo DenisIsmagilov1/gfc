@@ -1,0 +1,100 @@
+<header class="header">
+  <div class="container">
+    <div class="header__body">
+      <div class="header__logo">
+        <img src="img/icons/logo.png" alt="logo">
+      </div>
+      <div class="header__toggle">
+        <span></span>
+      </div>
+      <nav class="header__menu">
+        <ul class="header__links">
+          <li class="header__link toggle">
+            <div class="header__toggle">
+              <span></span>
+            </div>
+            <span>
+              Меню
+            </span>
+          </li>
+          <li class="header__link">
+            <a href="/">Главная</a>
+          </li>
+          <li class="header__link">
+            <a href="/about.html">О нас</a>
+          </li>
+          <li class="header__link link__popup" onclick="showPopup(event)">
+            <a href="#">Торговля</a>
+            <div class="header__popup">
+              <ul class="header__popup__links">
+                <li class="header__popup__link">
+                  <a href="/platform.html">Торговая платформа</a>
+                </li>
+                <li class="header__popup__link">
+                  <a href="/trading.html">Управленческий консалтинг</a>
+                </li>
+                <li class="header__popup__link">
+                  <a href="/portfolio.html">Инвестиционные портфели</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="header__link">
+            <a href="/analytics.html">Аналитика</a>
+          </li>
+          <li class="header__link">
+            <a href="/contacts.html">Контакты</a>
+          </li>
+        </ul>
+        <div class="header__buttons">
+          <a href="#" class="header__button button button_outlined">
+            Личный кабинет
+          </a>
+          <a href="#" class="header__button button button_filled">
+            Открыть счет
+          </a>
+        </div>
+      </nav>
+      <div class="header__lang">
+        <div class="header__lang__select">
+          <div class="header__lang__selector" onclick="showLang(event)">
+            <span>
+              <img src="./img/icons/tabler_world.svg" alt="world">
+            </span>
+            <span>
+              <img src="./img/icons/bi_chevron-down.svg" alt="chevron">
+            </span>
+          </div>
+          <div class="header__lang__options">
+            <ul>
+              <li class="header__lang__option">
+                <a href="#">
+                  <div class="header__lang__option__body">
+                    <div class="header__lang__option__img">
+                      <img src="./img/icons/tabler_world.svg" alt="world">
+                    </div>
+                    <span>
+                      Русский (Ru)
+                    </span>
+                  </div>
+                </a>
+            </li>
+              <li class="header__lang__option">
+                <a href="">
+                  <div class="header__lang__option__body">
+                    <div class="header__lang__option__img">
+                      <img src="./img/icons/₽.svg" alt="Rub">
+                    </div>
+                    <span>
+                      RUB
+                    </span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

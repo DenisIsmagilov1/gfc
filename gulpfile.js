@@ -38,6 +38,7 @@ const rename = require("gulp-rename");
 const uglify = require("gulp-uglify-es").default;
 const babel = require('gulp-babel');
 const imagemin = require('gulp-imagemin');
+const hash = require('gulp-hash-filename');
 
 function browserReloader() {
   browserSync.init({
@@ -58,6 +59,7 @@ function html() {
 
 function css() {
   return src(path.src.css)
+    .pipe(hash())
     .pipe(scss({
       outputStyle: "expanded"
     }))
@@ -70,6 +72,7 @@ function css() {
     .pipe(cleanCss())
     .pipe(rename({
       extname: '.min.css'
+      
     }))
     .pipe(dest(path.build.css))
     .pipe(browserSync.stream())
@@ -96,7 +99,7 @@ function images() {
       progressive: true,
       svgoPlugins: [{removeViewBox: false}],
       interplaced: true,
-      optimizationLevel: 3
+      optimizationLevel: 7
     }))
     .pipe(dest(path.build.img))
     .pipe(browserSync.stream())

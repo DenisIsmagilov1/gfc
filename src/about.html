@@ -4,108 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css">
-  <title>GFC</title>
+  <link rel="stylesheet" href="css/style-85e2f95bfda2c128e51be6e61a1f17a1.min.css">
+  <title>GFS</title>
 </head>
 <body>
   <div class="wrapper">
-    <header class="header">
-      <div class="container">
-        <div class="header__body">
-          <div class="header__toggle">
-            <span></span>
-          </div>
-          <nav class="header__menu">
-            <ul class="header__links">
-              <li class="header__link toggle">
-                <div class="header__toggle">
-                  <span></span>
-                </div>
-                <span>
-                  Меню
-                </span>
-              </li>
-              <li class="header__link">
-                <a href="/">Главная</a>
-              </li>
-              <li class="header__link">
-                <a href="/about.html">О нас</a>
-              </li>
-              <li class="header__link link__popup" onclick="showPopup(event)">
-                <a href="#">Торговля</a>
-                <div class="header__popup">
-                  <ul class="header__popup__links">
-                    <li class="header__popup__link">
-                      <a href="/platform.html">Торговая платформа</a>
-                    </li>
-                    <li class="header__popup__link">
-                      <a href="/trading.html">Управленческий консалтинг</a>
-                    </li>
-                    <li class="header__popup__link">
-                      <a href="/portfolio.html">Инвестиционные портфели</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="header__link">
-                <a href="/analytics.html">Аналитика</a>
-              </li>
-              <li class="header__link">
-                <a href="/contacts.html">Контакты</a>
-              </li>
-            </ul>
-            <div class="header__buttons">
-              <a href="#" class="header__button button button_outlined">
-                Личный кабинет
-              </a>
-              <a href="#" class="header__button button button_filled">
-                Открыть счет
-              </a>
-            </div>
-          </nav>
-          <div class="header__lang">
-            <div class="header__lang__select">
-              <div class="header__lang__selector" onclick="showLang(event)">
-                <span>
-                  <img src="./img/icons/tabler_world.svg" alt="world">
-                </span>
-                <span>
-                  <img src="./img/icons/bi_chevron-down.svg" alt="chevron">
-                </span>
-              </div>
-              <div class="header__lang__options">
-                <ul>
-                  <li class="header__lang__option">
-                    <a href="#">
-                      <div class="header__lang__option__body">
-                        <div class="header__lang__option__img">
-                          <img src="./img/icons/tabler_world.svg" alt="world">
-                        </div>
-                        <span>
-                          Русский (Ru)
-                        </span>
-                      </div>
-                    </a>
-                </li>
-                  <li class="header__lang__option">
-                    <a href="">
-                      <div class="header__lang__option__body">
-                        <div class="header__lang__option__img">
-                          <img src="./img/icons/₽.svg" alt="Rub">
-                        </div>
-                        <span>
-                          RUB
-                        </span>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
+    @@include('./components/_header.html')
     <main class="root">
       <section class="section _fullscreen ibg">
         <img src="./img/images/about_start.png" alt="bg">
@@ -373,79 +277,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__body">
-          <div class="footer__columns">
-            <div class="footer__column">
-              <div class="footer__column__header">
-                Документы
-              </div>
-              <ul>
-                <li class="footer__links"><a href="#">Политика AML</a></li>
-                <li class="footer__links"><a href="#">Политика возврата денежных средств</a></li>
-                <li class="footer__links"><a href="#">Политика конфиденциальности</a></li>
-                <li class="footer__links"><a href="#">Пользовательское соглашение</a></li>
-                <li class="footer__links"><a href="#">Уведомление о рисках</a></li>
-              </ul>
-            </div>
-            <div class="footer__column">
-              <div class="footer__column__header">
-                Страницы
-              </div>
-              <ul>
-                <li class="footer__links"><a href="/">Главная</a></li>
-                <li class="footer__links"><a href="/about.html">О Нас</a></li>
-                <li class="footer__links"><a href="#">Торговля</a></li>
-                <li class="footer__sublinks"><a href="/trading.html">Торговая платформа</a></li>
-                <li class="footer__sublinks"><a href="/trading.html">Управленческий консалтинг</a></li>
-                <li class="footer__sublinks"><a href="/portfolio.html">Инвестиционные портфели</a></li>
-                <li class="footer__links"><a href="/analytics.html">Аналитика</a></li>
-                <li class="footer__links"><a href="/contacts.html">Контакты</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="footer__info">
-            <div class="footer__paragraph">
-              <div class="footer__paragraph__title">
-                Правовая информация:
-              </div>
-              <div class="footer__paragraph__text">
-                Бренд GFS принадлежит компании Global Finance System
-              </div>
-            </div>
-            <div class="footer__paragraph">
-              <div class="footer__paragraph__title">
-                Уведомление о рисках
-              </div>
-              <div class="footer__paragraph__text">
-                Торговля валютами, контрактами на разницу (CFD) и другими активами с привлечением заемных средств несет высокий риск для капитала и подходит не всем инвесторам. 
-                Прежде чем начать торговать, убедитесь, что вы полностью понимаете связанные с этим риски, учитываете свои инвестиционные цели и уровень опыта, а при необходимости 
-                обратитесь за консультацией к независимому эксперту. Пожалуйста, прочтите полное предупреждение о риске.
-              </div>
-            </div>
-            <div class="footer__paragraph">
-              <div class="footer__paragraph__title">
-                Региональные ограничения:
-              </div>
-              <div class="footer__paragraph__text">
-                Услуги и информация на сайте не предназначены для граждан/резидентов США, а также для распространения или использования любым лицом в любой стране или юрисдикции,
-                где такое распространение или использование противоречило бы местному законодательству или нормативным актам.
-              </div>
-            </div>
-            <div class="footer__paragraph">
-              <div class="footer__paragraph__text">
-                <p>Oceanic building office 268, 3035 , Limassol,</p>
-                <p>Cyprus</p>
-              </div>
-            </div>
-            <div class="footer__paragraph">
-              <div class="footer__paragraph__text">© 2021 </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+    @@include('./components/_footer.html')
   </div>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="js/script.min.js"></script>
